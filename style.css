@@ -49,7 +49,12 @@ nav {
     
 }
 
-
+.nav-link ul li a{
+    text-decoration: none;
+    color: #b7e7f6;
+    
+    
+}
 
 
 
