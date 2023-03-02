@@ -36,5 +36,38 @@ nav {
 }
 
 .nav-link {
-    flex: 
+    flex: 1;
+    text-align: center;
 }
+
+.nav-link ul li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    padding: 15px 5px;
+    margin: 0 25px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
