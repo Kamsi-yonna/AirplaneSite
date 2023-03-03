@@ -13,7 +13,7 @@
 
 .navbar {
     width: 100%;
-    border: px solid #b7e7f6;
+    border-bottom: 2px solid #b7e7f6;
 }
 
 nav {
@@ -144,39 +144,98 @@ nav {
     position: absolute;
     left: 0;
     top: 100px;
+
+    animation: clouds 10s linear infinite;
+}
+
+@keyframes clouds {
+    0%{
+        top: -100px;
+    }
+
+    20%{
+        top: 100px;
+    }
+
+    80%{
+        top: 100px;
+    }
+
+    100%{
+        top: -100px;
+    }
 }
 
 #plane {
     width: 200px;
     position: absolute;
-    top: 180px;
-    left: 250px;
+    top: 200px;
+    left: -250px;
     z-index: 2;
+
+    animation: flight 7.9s linear infinite ;
+}
+
+@keyframes flight {
+    0%{
+        left: -250px;
+    }
+
+    20%{
+        left: 250px;
+    }
+
+    80%{
+        left: 250px;
+    }
+
+    100%{
+        left: 110%;
+    }
 }
 
 #balloons{
     height: 400px;
-    width: 900px;
+    width: 700px;
     position: absolute;
-    bottom: 100px;
+    bottom: -450px;
     left: 50%;
     transform: translateX(-50%);
+
+    animation: balloon 8s linear infinite;
+}
+
+@keyframes balloon {
+    0%{
+        bottom: -450px;
+    }
+
+    20%{
+        bottom: 100px;
+    }
+
+    80%{
+        bottom: 100px;
+    }
+
+    100%{
+        bottom: -450px;
+    }
 }
 
 .balloon1{
-    width: 200px;
+    width: 150PX;
     opacity: 0.4;
 }
 
 .balloon2{
-    width: 400px;
+    width: 350PX;
 }
 
 .balloon3{
-    width: 200px;
+    width: 180px;
     opacity: 0.4;
 }
-
 
 #pause {
     height: 70px;
@@ -187,15 +246,5 @@ nav {
     transform: translateX(-50%);
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
 
 .
