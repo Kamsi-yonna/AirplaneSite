@@ -73,6 +73,33 @@
         <img src="images/pause.png" id="pause">
     
     </div>
+
+    <script>
+        var pause = document.getElementById("pause");
+
+        pause.onclick = function(){
+            if(clouds.style.webkitAnimationPlayState == "paused")
+                {
+                    clouds.style.webkitAnimationPlayState = "running";
+                    plane.style.webkitAnimationPlayState = "running";
+                    balloons.style.webkitAnimationPlayState = "running";
+
+                    pause.src ='images/pause.png'; 
+                }
+
+            else{
+                    clouds.style.webkitAnimationPlayState = "paused";
+                    plane.style.webkitAnimationPlayState = "paused";
+                    balloons.style.webkitAnimationPlayState = "paused";
+
+                    pause.src ='images/play.png';
+                }
+
+            }
+
+
+
+    </script>
     
 </body>
 </html>
