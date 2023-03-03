@@ -225,7 +225,7 @@ nav {
 #clouds {
     width: 100%;
     position: absolute;
-    left: 0;
+    left: -100px;
     top: 100px;
 
     animation: clouds 10s linear infinite;
@@ -233,19 +233,19 @@ nav {
 
 @keyframes clouds {
     0%{
-        top: -100px;
+        left: -100px;
     }
 
     20%{
-        top: 100px;
+        left: 100px;
     }
 
     80%{
-        top: 100px;
+        left: 100px;
     }
 
     100%{
-        top: -100px;
+        left: -100px;
     }
 }
 
@@ -256,7 +256,7 @@ nav {
     left: -250px;
     z-index: 2;
 
-    animation: flight 7.9s linear infinite ;
+    animation: flight 10s infinite ;
 }
 
 @keyframes flight {
@@ -335,32 +335,3 @@ nav {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-s
