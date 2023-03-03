@@ -18,7 +18,7 @@
 
 nav {
     display: flex;
-    margin: 28px auto 0;
+    margin: 10px auto 0;
     width: 80%;
     align-items: center;
     position: sticky;
@@ -57,24 +57,28 @@ nav {
 
 .nav-link ul li::after{
     content: '';
-    width: 100%;
+    width: 0%;
     height: 4px;
     background: transparent;
     position: absolute;
     bottom: 10px;
     left: 0;
+
+    transition: ease-in-out 1s;
     
 }
 
 .nav-link ul li:hover::after {
-    background: #fff;
+    background: #ffffff;
+    width: 100%;
+
+    
 }
 
 .active::after{
     background: #FFF !important;
 
 }
-
 
 .menu-icon {
     flex-basis: 15%;
@@ -95,22 +99,101 @@ nav {
 .content {
     width: 300px;
     position: absolute;
-    padding-top: 20px;
-    top: 90px;
+    padding-top: 25px;
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     z-index: 2;
 }
 
-.social-icons a{
-    width: 18px;
-    margin: 0 15px;
-    font-size: 20px;
-    cursor: pointer;
-    color: #fff;;
 
+.icons{
+    display: inline-flex;
 }
+
+.icons .icon {
+    display: flex;
+    position: relative;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    flex-direction: column;
+
+    transition: 0.5s cubic-bezier(0.17, -0.67, 0.83,2);
+}
+
+.icons .icon span{
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(#21b3e1, #ffffff57);
+    border-radius: 50%;
+    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.5); 
+    z-index: 2;
+}
+
+.icons .icon span i {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    
+    transition: 0.5s;
+}
+
+.icons .icon span i:hover {
+    color: #fff;
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+}
+
+.icons .icon:hover span {
+  color: #333;
+}
+
+.icons .facebook:hover span {
+  background: #3b5998   ;
+}
+
+.icons .twitter:hover span {
+  background: #00acee   ;
+}
+
+.icons .instagram:hover span {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.icons .whatsapp:hover span {
+  background: #25d366;
+}
+
+.icons .linkedin:hover span {
+  background: #0072b1 ;
+}
+
+.icons .youtube:hover span {
+  background: #e02619;
+}
+
+@media (max-width: 768px) {
+
+    .icons .icon span{
+        height: 70px;
+        width: 70px;
+    }
+            
+    .icons .icon span i {
+        font-size: 30px;
+        line-height: 70px;
+        }
+        
+    }
 
 .search-box{
     padding-right: 10px;
@@ -119,7 +202,7 @@ nav {
     display: flex;
     border-radius: 30px;;
     align-items: center;
-    background: linear-gradient(rgba(201, 36, 36, 0.4),rgba(255,255,255,.2));
+    background: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255,255,255,.2));
 }
 
 .search-box input {
@@ -128,11 +211,11 @@ nav {
     padding: 7px 15px;
     width: 100%;
     background: transparent;
-    color: #b7e7f6;
+    color: #636363;
 }
 
 ::placeholder{
-    color: #b7e7f6;
+    color: #636363;
 }
 
 .search-box img{
@@ -167,9 +250,9 @@ nav {
 }
 
 #plane {
-    width: 200px;
+    width: 250px;
     position: absolute;
-    top: 200px;
+    top: 180px;
     left: -250px;
     z-index: 2;
 
@@ -195,12 +278,13 @@ nav {
 }
 
 #balloons{
-    height: 400px;
-    width: 700px;
+    height: 600px;
+    width: 2000px;
     position: absolute;
     bottom: -450px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 30%;
+    transform: translateX(-20%);
+    z-index: ;
 
     animation: balloon 8s linear infinite;
 }
@@ -224,17 +308,21 @@ nav {
 }
 
 .balloon1{
-    width: 150PX;
+    width: 500px;
+    top: 30px;
     opacity: 0.4;
 }
 
 .balloon2{
-    width: 350PX;
+    width: 400px;
+    /* opacity: 0.8; */
+
 }
 
 .balloon3{
-    width: 180px;
-    opacity: 0.4;
+    width: 700px;
+    opacity: 0.8;
+    z-index: 2;
 }
 
 #pause {
@@ -247,4 +335,32 @@ nav {
     cursor: pointer;
 }
 
-.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+s
